@@ -53,7 +53,7 @@ build CMakeFiles/test.dir/main.cpp.obj: CXX_COMPILER__test_unscanned_Debug E$:/G
   DEFINES = -DGLEW_STATIC
   DEP_FILE = CMakeFiles\test.dir\main.cpp.obj.d
   FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++14
-  INCLUDES = -isystem E:/GitHub/projects/OpenGL_tutorial/Project_2/GLEW -isystem E:/GitHub/projects/OpenGL_tutorial/Project_2/GLFW
+  INCLUDES = -isystem E:/GitHub/projects/OpenGL_tutorial/Project_2/GLEW/include -isystem E:/GitHub/projects/OpenGL_tutorial/Project_2/GLFW/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir
   TARGET_COMPILE_PDB = CMakeFiles\test.dir\
