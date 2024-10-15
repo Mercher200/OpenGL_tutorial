@@ -52,7 +52,7 @@ build cmake_object_order_depends_target_test: phony || .
 build CMakeFiles/test.dir/main.cpp.obj: CXX_COMPILER__test_unscanned_Debug E$:/GitHub/projects/OpenGL_tutorial/main.cpp || cmake_object_order_depends_target_test
   DEP_FILE = CMakeFiles\test.dir\main.cpp.obj.d
   FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++14
-  INCLUDES = -isystem E:/GitHub/projects/OpenGL_tutorial
+  INCLUDES = -isystem E:/GitHub/projects/OpenGL_tutorial/GLFW
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir
   TARGET_COMPILE_PDB = CMakeFiles\test.dir\
@@ -66,10 +66,10 @@ build CMakeFiles/test.dir/main.cpp.obj: CXX_COMPILER__test_unscanned_Debug E$:/G
 #############################################
 # Link the executable test.exe
 
-build test.exe: CXX_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/main.cpp.obj | E$:/GitHub/projects/OpenGL_tutorial/glfw3.lib
+build test.exe: CXX_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/main.cpp.obj | E$:/GitHub/projects/OpenGL_tutorial/GLFW/glfw3.lib
   FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
   LINK_FLAGS = -Xlinker /subsystem:console  -fuse-ld=lld-link
-  LINK_LIBRARIES = E:/GitHub/projects/OpenGL_tutorial/glfw3.lib  -lopengl32.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames
+  LINK_LIBRARIES = E:/GitHub/projects/OpenGL_tutorial/GLFW/glfw3.lib  -lopengl32.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames
   OBJECT_DIR = CMakeFiles\test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
