@@ -1,6 +1,5 @@
 #include "glew.h"
 #include "glfw3.h"
-
 #include <iostream>
 
 int main(void)
@@ -31,15 +30,17 @@ int main(void)
     }; 
 
     uint32_t buffer;
-    glGenBuffers(1, &buffer); //создание буффера
-    glBindBuffer(GL_ARRAY_BUFFER, buffer); //привязка буффера
-    glBufferData(GL_ARRAY_BUFFER, 6 * sizeof(float), positions, GL_STATIC_DRAW); // заполнение буффера
+    glGenBuffers(1, &buffer); //создание фактического буффера
+    glBindBuffer(GL_ARRAY_BUFFER, buffer); //привязка фактического буффера
+    glBufferData(GL_ARRAY_BUFFER, 6 * sizeof(float), positions, GL_STATIC_DRAW); // заполнение фактического буффера
+
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
 
     while (!glfwWindowShouldClose(window))
     {
         glClear(GL_COLOR_BUFFER_BIT);
 
-        glDrawArrays(GL_TRIANGLES, 0, 3); // если нет индексного буффера
+        glDrawArrays(GL_TRIANGLES, 0, 3); // если нет индексного буффера, треугольник не ресуется(
         // glDrawElements(); //использую индексный буффер
 
         glfwSwapBuffers(window);

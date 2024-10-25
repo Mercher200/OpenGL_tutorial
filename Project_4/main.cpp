@@ -3,6 +3,20 @@
 
 #include <iostream>
 
+static unsigned int CompileShader(unsigned int type, const std::string& source){
+    unsigned int id = glCreateShader(GL_VERTEX_SHADER);
+    const char* src = source.c_str(); //поиск первого символа в строке и возврат адреса памяти 
+    glShaderSource(id, 1, &src, nullptr); //указать источник шейдера
+}
+
+static int Create_Shader(const std::string& vertexShader, const std::string& fragmentShader){
+
+    unsigned int program = glCreateProgram();
+    // вершинный и фрагментный шейдеры
+    unsigned int vs = CompileShader(GL_VERTEX_SHADER , vertexShader);//вершинный щейдер
+
+}
+
 int main(void)
 {
     GLFWwindow* window;
@@ -31,9 +45,16 @@ int main(void)
     }; 
 
     uint32_t buffer;
-    glGenBuffers(1, &buffer); //создание буффера
-    glBindBuffer(GL_ARRAY_BUFFER, buffer); //привязка буффера
-    glBufferData(GL_ARRAY_BUFFER, 6 * sizeof(float), positions, GL_STATIC_DRAW); // заполнение буффера
+    glGenBuffers(1, &buffer); //создание фактического буффера
+    glBindBuffer(GL_ARRAY_BUFFER, buffer); //привязка фактического буффера
+    glBufferData(GL_ARRAY_BUFFER, 6 * sizeof(float), positions, GL_STATIC_DRAW); // заполнение фактического буффера
+    
+    // - расположение фактического буффера
+    glEnableVertexAttribArray(0); //для обрезки массива
+    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 2, 0); // привязка буффера
+    // -
+
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
 
     while (!glfwWindowShouldClose(window))
     {
