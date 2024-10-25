@@ -3,18 +3,44 @@
 
 #include <iostream>
 
-static unsigned int CompileShader(unsigned int type, const std::string& source){
-    unsigned int id = glCreateShader(GL_VERTEX_SHADER);
-    const char* src = source.c_str(); //поиск первого символа в строке и возврат адреса памяти 
-    glShaderSource(id, 1, &src, nullptr); //указать источник шейдера
+static unsigned int CompileShader(unsigned int type, const std::string& source){ 
+    // компиляция шейдера и получение его индефикатора
+        unsigned int id = glCreateShader(type);
+        const char* src = source.c_str(); //поиск первого символа в строке и возврат адреса памяти 
+        glShaderSource(id, 1, &src, nullptr); //указать источник шейдера
+        glCompileShader(id); //компиляция шейдера
+
+        int result;
+        glGetShaderiv(id, GL_COMPILE_STATUS, &result);//запрос информации о провверки правильности компиляции (статус компиляции)
+        if(result == GL_FALSE){
+            int length;
+            glGetShaderiv(id, GL_INFO_LOG_LENGTH, &length);
+            char* message = (char*)alloca(length * sizeof(char)); 
+            glGetShaderInfoLog(id, length, &length, message);
+            std::cout << "Failed to compile shader!" << (type == GL_VERTEX_SHADER ? "vertex" : "fragment") << std::endl;
+            std::cout << message << std::endl;
+            glDeleteShader(id);
+            return 0;
+        }
+    return id;
 }
 
-static int Create_Shader(const std::string& vertexShader, const std::string& fragmentShader){
-
+static unsigned int Create_Shader(const std::string& vertexShader, const std::string& fragmentShader){
     unsigned int program = glCreateProgram();
     // вершинный и фрагментный шейдеры
-    unsigned int vs = CompileShader(GL_VERTEX_SHADER , vertexShader);//вершинный щейдер
+    unsigned int vs = CompileShader(GL_VERTEX_SHADER , vertexShader); //вершинный щейдер
+    unsigned int fs = CompileShader(GL_FRAGMENT_SHADER , fragmentShader); //фрагментный щейдер
 
+    // обьединение двух шейдеров в одну программу 
+    glAttachShader(program, vs);
+    glAttachShader(program, fs);
+    glLinkProgram(program);
+    glValidateProgram(program); //устанавливает состояние программы 
+
+    glDeleteShader(vs);
+    glDeleteShader(fs);
+
+    return program;
 }
 
 int main(void)
@@ -54,7 +80,30 @@ int main(void)
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 2, 0); // привязка буффера
     // -
 
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    //вершинный шейдер
+    std::string vertexShader = 
+    "#version 330 core\n"
+    "\n"
+    "layout(location = 0) in vec4 position;\n"
+    "\n"
+    "void main()\n"
+    "{\n"
+    "gl_Position = position;\n"
+    "}\n";
+
+    //фрагментный шейдер (настройки цвета)
+    std::string fragmentShader = 
+    "#version 330 core\n"
+    "\n"
+    "layout(location = 0) out vec4 color;\n"
+    "\n"
+    "void main()\n"
+    "{\n"
+    "color = vec4(1.0, 0.0, 0.0, 1.0);\n"
+    "}\n";
+
+    unsigned int shader = Create_Shader(vertexShader, fragmentShader);
+    glUseProgram(shader);
 
     while (!glfwWindowShouldClose(window))
     {
