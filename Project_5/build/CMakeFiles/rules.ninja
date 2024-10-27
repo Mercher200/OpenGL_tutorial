@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SE:\GitHub\projects\OpenGL_tutorial\Project_4 -BE:\GitHub\projects\OpenGL_tutorial\Project_4\build
+  command = "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SE:\GitHub\projects\OpenGL_tutorial\Project_5 -BE:\GitHub\projects\OpenGL_tutorial\Project_5\build
   description = Re-running CMake...
   generator = 1
 
