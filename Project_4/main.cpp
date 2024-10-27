@@ -64,15 +64,18 @@ int main(void)
 
     std::cout<<glGetString(GL_VERSION) <<std::endl;
 
-    float positions[] = {
+    float positions[] = { //фактический буфер 
         -0.5f , -0.5f ,
          0.5f , -0.5f ,
-         0.0f , 0.5f ,
-
-        0.5f , 0.5f ,
-         -0.5f , 0.5f ,
-        - 0.5f , -0.5f 
+         0.0f ,  0.5f ,
+        -0.5f ,  0.5f ,
     }; 
+
+    // индексный буффер
+    unsigned int indices[] = {
+        0, 1, 2,
+        2, 3, 0,
+    }; // индексация фактичесного буффера 
 
     uint32_t buffer;
     glGenBuffers(1, &buffer); //создание фактического буффера
@@ -83,6 +86,12 @@ int main(void)
     glEnableVertexAttribArray(0); //для обрезки массива
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 2, 0); // привязка буффера
     // -
+
+    // индексный буффер
+    uint32_t ibo;
+    glGenBuffers(1, &ibo); //создание индексного буффера
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ibo); //привязка индексного буффера
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, 6 * sizeof(unsigned int), indices, GL_STATIC_DRAW); // заполнение индексного буффера
 
     //вершинный шейдер
     std::string vertexShader = 
@@ -113,8 +122,8 @@ int main(void)
     {
         glClear(GL_COLOR_BUFFER_BIT);
 
-        glDrawArrays(GL_TRIANGLES, 0, 6); // если нет индексного буффера
-        // glDrawElements(); //использую индексный буффер
+        //glDrawArrays(GL_TRIANGLES, 0, 6); // если нет индексного буффера
+         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr); //фактический вызов отрисоки с помощью индексного буффера ( внимательно смотреть что в 3, тип данных инфексного буффера)
 
         glfwSwapBuffers(window);
 
