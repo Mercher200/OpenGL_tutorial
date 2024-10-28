@@ -75,7 +75,7 @@ int main(void)
         return -1;
 
 
-    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
+    window = glfwCreateWindow(640, 480, " ", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
@@ -147,9 +147,13 @@ int main(void)
     int location = glGetUniformLocation(shader, "u_Color"); //получение доступа к положению переменной цвета
     glUniform4f(location, 0.2f, 0.3f, 0.8f, 1.0f); //установить данные в шейдере
 
+    // float red = 
+
     while (!glfwWindowShouldClose(window))
     {
         glClear(GL_COLOR_BUFFER_BIT);
+
+        // glUniform4f(location, 0.2f, 0.3f, 0.8f, 1.0f);
 
         // GLClearError(); // очитска ошибок 
         //glDrawArrays(GL_TRIANGLES, 0, 6); // если нет индексного буффера, последовательная отрисовка вершин
