@@ -84,6 +84,8 @@ int main(void)
 
     glfwMakeContextCurrent(window);
 
+    glfwSwapInterval(1);
+
     if(glewInit() != GLEW_OK) std::cout << "ERROR !!!" << std::endl;
 
     std::cout<<glGetString(GL_VERSION) <<std::endl;
@@ -147,17 +149,21 @@ int main(void)
     int location = glGetUniformLocation(shader, "u_Color"); //получение доступа к положению переменной цвета
     glUniform4f(location, 0.2f, 0.3f, 0.8f, 1.0f); //установить данные в шейдере
 
-    // float red = 
+    float red = 0.0f;
+    float increment = 0.05f;
 
     while (!glfwWindowShouldClose(window))
     {
         glClear(GL_COLOR_BUFFER_BIT);
 
-        // glUniform4f(location, 0.2f, 0.3f, 0.8f, 1.0f);
+        glUniform4f(location, red, 0.3f, 0.8f, 1.0f);
 
         // GLClearError(); // очитска ошибок 
         //glDrawArrays(GL_TRIANGLES, 0, 6); // если нет индексного буффера, последовательная отрисовка вершин
          glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr); //фактический вызов отрисоки с помощью индексного буффера ( внимательно смотреть что в 3, тип данных инфексного буффера)
+
+        if(red > 1.0f) increment = -0.05f; else if(red < 0.0f) increment = 0.05f;
+        red+=increment;
 
         glfwSwapBuffers(window);
 

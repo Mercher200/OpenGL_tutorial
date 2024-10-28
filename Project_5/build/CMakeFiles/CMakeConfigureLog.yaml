@@ -101,8 +101,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-59z4na"
-      binary: "E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-59z4na"
+      source: "E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-1h9duu"
+      binary: "E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-1h9duu"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: ""
@@ -112,16 +112,16 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-59z4na'
+        Change Dir: 'E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-1h9duu'
         
-        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_783b9
-        [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang.exe   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_783b9.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_783b9.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_783b9.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCCompilerABI.c"
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\clang.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -v  -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_783b9.dir/CMakeCCompilerABI.c.obj -o cmTC_783b9.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_783b9.lib -Xlinker /pdb:cmTC_783b9.pdb -Xlinker /version:0.0     && cd ."
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_e04f8
+        [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang.exe   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_e04f8.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_e04f8.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_e04f8.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCCompilerABI.c"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\clang.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -v  -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_e04f8.dir/CMakeCCompilerABI.c.obj -o cmTC_e04f8.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_e04f8.lib -Xlinker /pdb:cmTC_e04f8.pdb -Xlinker /version:0.0     && cd ."
         clang version 19.1.0
         Target: x86_64-pc-windows-msvc
         Thread model: posix
         InstalledDir: C:\\Program Files\\LLVM\\bin
-         "C:\\\\Program Files\\\\LLVM\\\\bin\\\\lld-link" -out:cmTC_783b9.exe "-libpath:E:\\\\VS\\\\VC\\\\Tools\\\\MSVC\\\\14.41.34120\\\\lib\\\\x64" "-libpath:E:\\\\VS\\\\VC\\\\Tools\\\\MSVC\\\\14.41.34120\\\\atlmfc\\\\lib\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\ucrt\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\um\\\\x64" "-libpath:C:\\\\Program Files\\\\LLVM\\\\lib\\\\clang\\\\19\\\\lib\\\\windows" -nologo -debug /subsystem:console CMakeFiles/cmTC_783b9.dir/CMakeCCompilerABI.c.obj /MANIFEST:EMBED /implib:cmTC_783b9.lib /pdb:cmTC_783b9.pdb /version:0.0\x0d
+         "C:\\\\Program Files\\\\LLVM\\\\bin\\\\lld-link" -out:cmTC_e04f8.exe "-libpath:E:\\\\VS\\\\VC\\\\Tools\\\\MSVC\\\\14.41.34120\\\\lib\\\\x64" "-libpath:E:\\\\VS\\\\VC\\\\Tools\\\\MSVC\\\\14.41.34120\\\\atlmfc\\\\lib\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\ucrt\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\um\\\\x64" "-libpath:C:\\\\Program Files\\\\LLVM\\\\lib\\\\clang\\\\19\\\\lib\\\\windows" -nologo -debug /subsystem:console CMakeFiles/cmTC_e04f8.dir/CMakeCCompilerABI.c.obj /MANIFEST:EMBED /implib:cmTC_e04f8.lib /pdb:cmTC_e04f8.pdb /version:0.0\x0d
         
       exitCode: 0
   -
@@ -182,8 +182,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-a253k8"
-      binary: "E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-a253k8"
+      source: "E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-khuafd"
+      binary: "E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-khuafd"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -194,16 +194,16 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-a253k8'
+        Change Dir: 'E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-khuafd'
         
-        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_1879e
-        [1/2] C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_1879e.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_1879e.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_1879e.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -v  -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_1879e.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_1879e.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_1879e.lib -Xlinker /pdb:cmTC_1879e.pdb -Xlinker /version:0.0     && cd ."
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_a2b83
+        [1/2] C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_a2b83.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_a2b83.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_a2b83.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -v  -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_a2b83.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_a2b83.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_a2b83.lib -Xlinker /pdb:cmTC_a2b83.pdb -Xlinker /version:0.0     && cd ."
         clang version 19.1.0
         Target: x86_64-pc-windows-msvc
         Thread model: posix
         InstalledDir: C:\\Program Files\\LLVM\\bin
-         "C:\\\\Program Files\\\\LLVM\\\\bin\\\\lld-link" -out:cmTC_1879e.exe "-libpath:E:\\\\VS\\\\VC\\\\Tools\\\\MSVC\\\\14.41.34120\\\\lib\\\\x64" "-libpath:E:\\\\VS\\\\VC\\\\Tools\\\\MSVC\\\\14.41.34120\\\\atlmfc\\\\lib\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\ucrt\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\um\\\\x64" "-libpath:C:\\\\Program Files\\\\LLVM\\\\lib\\\\clang\\\\19\\\\lib\\\\windows" -nologo -debug /subsystem:console CMakeFiles/cmTC_1879e.dir/CMakeCXXCompilerABI.cpp.obj /MANIFEST:EMBED /implib:cmTC_1879e.lib /pdb:cmTC_1879e.pdb /version:0.0\x0d
+         "C:\\\\Program Files\\\\LLVM\\\\bin\\\\lld-link" -out:cmTC_a2b83.exe "-libpath:E:\\\\VS\\\\VC\\\\Tools\\\\MSVC\\\\14.41.34120\\\\lib\\\\x64" "-libpath:E:\\\\VS\\\\VC\\\\Tools\\\\MSVC\\\\14.41.34120\\\\atlmfc\\\\lib\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\ucrt\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\um\\\\x64" "-libpath:C:\\\\Program Files\\\\LLVM\\\\lib\\\\clang\\\\19\\\\lib\\\\windows" -nologo -debug /subsystem:console CMakeFiles/cmTC_a2b83.dir/CMakeCXXCompilerABI.cpp.obj /MANIFEST:EMBED /implib:cmTC_a2b83.lib /pdb:cmTC_a2b83.pdb /version:0.0\x0d
         
       exitCode: 0
   -
@@ -267,8 +267,8 @@ events:
     checks:
       - "Detecting CXX compile features"
     directories:
-      source: "E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-c21hxa"
-      binary: "E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-c21hxa"
+      source: "E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-llg9tr"
+      binary: "E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-llg9tr"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -278,11 +278,11 @@ events:
       variable: "CMAKE_CXX_FEATURE_TEST"
       cached: true
       stdout: |
-        Change Dir: 'E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-c21hxa'
+        Change Dir: 'E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-llg9tr'
         
-        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_50188
-        [1/2] C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_50188.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_50188.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_50188.dir/feature_tests.cxx.obj -c E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-c21hxa/feature_tests.cxx
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_50188.dir/feature_tests.cxx.obj -o cmTC_50188.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_50188.lib -Xlinker /pdb:cmTC_50188.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_f42eb
+        [1/2] C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_f42eb.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_f42eb.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_f42eb.dir/feature_tests.cxx.obj -c E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-llg9tr/feature_tests.cxx
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_f42eb.dir/feature_tests.cxx.obj -o cmTC_f42eb.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_f42eb.lib -Xlinker /pdb:cmTC_f42eb.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
         
       exitCode: 0
   -
@@ -297,8 +297,8 @@ events:
     checks:
       - "Detecting CXX compile features"
     directories:
-      source: "E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-f2sony"
-      binary: "E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-f2sony"
+      source: "E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-ifvz69"
+      binary: "E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-ifvz69"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -308,11 +308,11 @@ events:
       variable: "CMAKE_CXX_FEATURE_TEST"
       cached: true
       stdout: |
-        Change Dir: 'E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-f2sony'
+        Change Dir: 'E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-ifvz69'
         
-        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_14c85
-        [1/2] C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_14c85.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_14c85.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_14c85.dir/feature_tests.cxx.obj -c E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-f2sony/feature_tests.cxx
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_14c85.dir/feature_tests.cxx.obj -o cmTC_14c85.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_14c85.lib -Xlinker /pdb:cmTC_14c85.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_2e6ee
+        [1/2] C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_2e6ee.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_2e6ee.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_2e6ee.dir/feature_tests.cxx.obj -c E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/CMakeScratch/TryCompile-ifvz69/feature_tests.cxx
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_2e6ee.dir/feature_tests.cxx.obj -o cmTC_2e6ee.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_2e6ee.lib -Xlinker /pdb:cmTC_2e6ee.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
         
       exitCode: 0
 ...
