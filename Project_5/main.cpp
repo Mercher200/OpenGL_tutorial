@@ -3,6 +3,30 @@
 
 #include <iostream>
 
+/*// макросы
+#define ASSERT(x) if (!(x)) __debugbreak(); //  отладки для компилятора MinGW
+#define GLCall(x) GLClearError();\
+x;\
+ASSERT(GLLogCall(#x, __FILE__, __LINE__))//(\ - игнорирование символа новой строки, для облегчения написания макроса) макрос выводящий ошибки, функцию, файл, строка
+
+static bool GLLogCall(const char* function, const char* file, int line){
+     while(GLenum error = glGetError()){
+        std::cout<< "[OpenGL Error] = (" << error << "): " << function << " " << file << " : " << line <<std::endl;
+        return false;
+    }
+    return true;
+}
+
+static void GLClearError(){ // для очистки всех ошибок
+    while(glGetError() != GL_NO_ERROR);
+}
+
+static void GLCheckError(){ // для вывода всех ошибок (ошибки в 16 сист)
+    while(GLenum error = glGetError()){
+        std::cout<< "[OpenGL Error] = (" << error << "): " <<std::endl;
+    }
+}*/
+
 static unsigned int CompileShader(unsigned int type, const std::string& source){ 
     // компиляция шейдера и получение его индефикатора
         unsigned int id = glCreateShader(type);
@@ -64,15 +88,18 @@ int main(void)
 
     std::cout<<glGetString(GL_VERSION) <<std::endl;
 
-    float positions[] = {
+    float positions[] = { //фактический буфер 
         -0.5f , -0.5f ,
          0.5f , -0.5f ,
-         0.0f , 0.5f ,
-
-        0.5f , 0.5f ,
-         -0.5f , 0.5f ,
-        - 0.5f , -0.5f 
+         0.0f ,  0.5f ,
+        -0.5f ,  0.5f ,
     }; 
+
+    // индексный буффер
+    unsigned int indices[] = {
+        0, 1, 2,
+        2, 3, 0,
+    }; // индексация фактичесного буффера 
 
     uint32_t buffer;
     glGenBuffers(1, &buffer); //создание фактического буффера
@@ -83,6 +110,12 @@ int main(void)
     glEnableVertexAttribArray(0); //для обрезки массива
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 2, 0); // привязка буффера
     // -
+
+    // индексный буффер
+    uint32_t ibo;
+    glGenBuffers(1, &ibo); //создание индексного буффера
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ibo); //привязка индексного буффера
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, 6 * sizeof(unsigned int), indices, GL_STATIC_DRAW); // заполнение индексного буффера
 
     //вершинный шейдер
     std::string vertexShader = 
@@ -101,20 +134,26 @@ int main(void)
     "\n"
     "layout(location = 0) out vec4 color;\n"
     "\n"
+    "uniform vec4 u_Color;\n" // обьявление переменной дял цвета и отделение ее 
+    "\n"
     "void main()\n"
     "{\n"
-    "color = vec4(1.0, 0.0, 0.0, 1.0);\n"
+    "color = u_Color;\n"
     "}\n";
 
     unsigned int shader = Create_Shader(vertexShader, fragmentShader);
     glUseProgram(shader);
 
+    int location = glGetUniformLocation(shader, "u_Color"); //получение доступа к положению переменной цвета
+    glUniform4f(location, 0.2f, 0.3f, 0.8f, 1.0f); //установить данные в шейдере
+
     while (!glfwWindowShouldClose(window))
     {
         glClear(GL_COLOR_BUFFER_BIT);
 
-        glDrawArrays(GL_TRIANGLES, 0, 6); // если нет индексного буффера
-        // glDrawElements(); //использую индексный буффер
+        // GLClearError(); // очитска ошибок 
+        //glDrawArrays(GL_TRIANGLES, 0, 6); // если нет индексного буффера, последовательная отрисовка вершин
+         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr); //фактический вызов отрисоки с помощью индексного буффера ( внимательно смотреть что в 3, тип данных инфексного буффера)
 
         glfwSwapBuffers(window);
 

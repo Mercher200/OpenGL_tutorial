@@ -1,3 +1,0 @@
-E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/test.dir
-E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/edit_cache.dir
-E:/GitHub/projects/OpenGL_tutorial/Project_5/build/CMakeFiles/rebuild_cache.dir
