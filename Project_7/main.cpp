@@ -85,8 +85,15 @@ int main(void)
     glGenVertexArrays(1, &vao);
     glBindVertexArray(vao); //привязка массива вершин и указание его индефикатора
 
+    VertexArray va;
     VertexBuffer vb(positions, 4 * 2 * sizeof(float));
-    
+    va.AddBuffer(vb);
+
+    BufferLauout layout;
+    layout.Push<float>(3);
+    va.AddLayout(layout);
+    va.Bind();
+
     // - расположение фактического буффера
     glEnableVertexAttribArray(0); //для обрезки массива
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 2, 0); // привязка буффера
@@ -139,6 +146,7 @@ int main(void)
         glUniform4f(location, red, 0.3f, 0.8f, 1.0f); //настраиваем униформу
 
         glBindVertexArray(vao);
+        va.Bind();
         ib.Bind();  //привязыаем индексный буффер
 
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr); //фактический вызов отрисоки с помощью индексного буффера ( внимательно смотреть что в 3, тип данных инфексного буффера)
