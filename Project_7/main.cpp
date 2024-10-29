@@ -3,8 +3,8 @@
 
 #include <iostream>
 
-#include "VertexBuffer.h";
-#include "indexBuffer.h";
+#include "VertexBuffer.h"
+#include "indexBuffer.h"
 
 static unsigned int CompileShader(unsigned int type, const std::string& source){ 
     // компиляция шейдера и получение его индефикатора
