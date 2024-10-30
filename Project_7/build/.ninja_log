@@ -1,6 +1,7 @@
 # ninja log v6
-3	1971	7519083174442727	src/CMakeFiles/src.dir/indexBuffer.cpp.obj	336aad0fdf723aa
-682	1980	7519083181220075	src/CMakeFiles/src.dir/VertexBuffer.cpp.obj	45b0726db5f39623
-1337	2532	7519083187768179	CMakeFiles/test.dir/main.cpp.obj	3a0a2d373fd5b1b2
-1980	2831	7519083194206640	src/src.lib	dc4a5b530d542fd
-2831	4641	7519083202718187	test.exe	2662738c08ecd7be
+4	2717	7519964465954007	src/CMakeFiles/src.dir/indexBuffer.cpp.obj	336aad0fdf723aa
+630	2725	7519964472213079	src/CMakeFiles/src.dir/VertexBuffer.cpp.obj	45b0726db5f39623
+1357	2760	7519964479478782	src/CMakeFiles/src.dir/VertexArray.cpp.obj	80b1a25045c12356
+1988	3228	7519964485787691	CMakeFiles/test.dir/main.cpp.obj	3a0a2d373fd5b1b2
+2761	3525	7519964493521826	src/src.lib	99c4f93feee3a959
+3525	5337	7519964501156296	test.exe	2662738c08ecd7be

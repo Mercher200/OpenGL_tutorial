@@ -5,6 +5,8 @@
 
 #include "VertexBuffer.h"
 #include "indexBuffer.h"
+#include "VertexArray.h" 
+
 
 static unsigned int CompileShader(unsigned int type, const std::string& source){ 
     // компиляция шейдера и получение его индефикатора
@@ -87,17 +89,10 @@ int main(void)
 
     VertexArray va;
     VertexBuffer vb(positions, 4 * 2 * sizeof(float));
-    va.AddBuffer(vb);
 
-    BufferLauout layout;
-    layout.Push<float>(3);
-    va.AddLayout(layout);
-    va.Bind();
-
-    // - расположение фактического буффера
-    glEnableVertexAttribArray(0); //для обрезки массива
-    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 2, 0); // привязка буффера
-    // -
+    VertexBufferLayout layout;
+    layout.Push<float>(2);
+    va.AddBuffer(vb, layout);
 
     indexBuffer ib(indices, 6);
 
@@ -145,7 +140,7 @@ int main(void)
         glUseProgram(shader); //прнивязыаем шейдер
         glUniform4f(location, red, 0.3f, 0.8f, 1.0f); //настраиваем униформу
 
-        glBindVertexArray(vao);
+        
         va.Bind();
         ib.Bind();  //привязыаем индексный буффер
 
