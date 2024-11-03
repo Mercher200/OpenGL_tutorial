@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
-add_library(src STATIC indexBuffer.cpp VertexBuffer.cpp VertexArray.cpp)
+add_library(src STATIC indexBuffer.cpp Renderer.cpp VertexBuffer.cpp VertexArray.cpp Shader.cpp Texture.cpp)
 
 find_package(OpenGL REQUIRED)
 

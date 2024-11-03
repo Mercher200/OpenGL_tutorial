@@ -127,6 +127,16 @@ build src/CMakeFiles/src.dir/indexBuffer.cpp.obj: CXX_COMPILER__src_unscanned_De
   TARGET_COMPILE_PDB = src\CMakeFiles\src.dir\src.pdb
   TARGET_PDB = src\src.pdb
 
+build src/CMakeFiles/src.dir/Renderer.cpp.obj: CXX_COMPILER__src_unscanned_Debug E$:/GitHub/projects/OpenGL_tutorial/Project_7/src/Renderer.cpp || cmake_object_order_depends_target_src
+  DEFINES = -DGLEW_STATIC
+  DEP_FILE = src\CMakeFiles\src.dir\Renderer.cpp.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++14
+  INCLUDES = -IE:/GitHub/projects/OpenGL_tutorial/Project_7/src/. -isystem E:/GitHub/projects/OpenGL_tutorial/Project_7/GLEW/include -isystem E:/GitHub/projects/OpenGL_tutorial/Project_7/GLFW/include
+  OBJECT_DIR = src\CMakeFiles\src.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\src.dir
+  TARGET_COMPILE_PDB = src\CMakeFiles\src.dir\src.pdb
+  TARGET_PDB = src\src.pdb
+
 build src/CMakeFiles/src.dir/VertexBuffer.cpp.obj: CXX_COMPILER__src_unscanned_Debug E$:/GitHub/projects/OpenGL_tutorial/Project_7/src/VertexBuffer.cpp || cmake_object_order_depends_target_src
   DEFINES = -DGLEW_STATIC
   DEP_FILE = src\CMakeFiles\src.dir\VertexBuffer.cpp.obj.d
@@ -147,6 +157,26 @@ build src/CMakeFiles/src.dir/VertexArray.cpp.obj: CXX_COMPILER__src_unscanned_De
   TARGET_COMPILE_PDB = src\CMakeFiles\src.dir\src.pdb
   TARGET_PDB = src\src.pdb
 
+build src/CMakeFiles/src.dir/Shader.cpp.obj: CXX_COMPILER__src_unscanned_Debug E$:/GitHub/projects/OpenGL_tutorial/Project_7/src/Shader.cpp || cmake_object_order_depends_target_src
+  DEFINES = -DGLEW_STATIC
+  DEP_FILE = src\CMakeFiles\src.dir\Shader.cpp.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++14
+  INCLUDES = -IE:/GitHub/projects/OpenGL_tutorial/Project_7/src/. -isystem E:/GitHub/projects/OpenGL_tutorial/Project_7/GLEW/include -isystem E:/GitHub/projects/OpenGL_tutorial/Project_7/GLFW/include
+  OBJECT_DIR = src\CMakeFiles\src.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\src.dir
+  TARGET_COMPILE_PDB = src\CMakeFiles\src.dir\src.pdb
+  TARGET_PDB = src\src.pdb
+
+build src/CMakeFiles/src.dir/Texture.cpp.obj: CXX_COMPILER__src_unscanned_Debug E$:/GitHub/projects/OpenGL_tutorial/Project_7/src/Texture.cpp || cmake_object_order_depends_target_src
+  DEFINES = -DGLEW_STATIC
+  DEP_FILE = src\CMakeFiles\src.dir\Texture.cpp.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++14
+  INCLUDES = -IE:/GitHub/projects/OpenGL_tutorial/Project_7/src/. -isystem E:/GitHub/projects/OpenGL_tutorial/Project_7/GLEW/include -isystem E:/GitHub/projects/OpenGL_tutorial/Project_7/GLFW/include
+  OBJECT_DIR = src\CMakeFiles\src.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\src.dir
+  TARGET_COMPILE_PDB = src\CMakeFiles\src.dir\src.pdb
+  TARGET_PDB = src\src.pdb
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target src
@@ -155,7 +185,7 @@ build src/CMakeFiles/src.dir/VertexArray.cpp.obj: CXX_COMPILER__src_unscanned_De
 #############################################
 # Link the static library src\src.lib
 
-build src/src.lib: CXX_STATIC_LIBRARY_LINKER__src_Debug src/CMakeFiles/src.dir/indexBuffer.cpp.obj src/CMakeFiles/src.dir/VertexBuffer.cpp.obj src/CMakeFiles/src.dir/VertexArray.cpp.obj
+build src/src.lib: CXX_STATIC_LIBRARY_LINKER__src_Debug src/CMakeFiles/src.dir/indexBuffer.cpp.obj src/CMakeFiles/src.dir/Renderer.cpp.obj src/CMakeFiles/src.dir/VertexBuffer.cpp.obj src/CMakeFiles/src.dir/VertexArray.cpp.obj src/CMakeFiles/src.dir/Shader.cpp.obj src/CMakeFiles/src.dir/Texture.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
   OBJECT_DIR = src\CMakeFiles\src.dir
   POST_BUILD = cd .
