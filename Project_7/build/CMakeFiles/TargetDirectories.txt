@@ -6,3 +6,9 @@ E:/GitHub/projects/OpenGL_tutorial/Project_7/build/src/CMakeFiles/edit_cache.dir
 E:/GitHub/projects/OpenGL_tutorial/Project_7/build/src/CMakeFiles/rebuild_cache.dir
 E:/GitHub/projects/OpenGL_tutorial/Project_7/build/src/glm/CMakeFiles/edit_cache.dir
 E:/GitHub/projects/OpenGL_tutorial/Project_7/build/src/glm/CMakeFiles/rebuild_cache.dir
+E:/GitHub/projects/OpenGL_tutorial/Project_7/build/imgui/CMakeFiles/imgui.dir
+E:/GitHub/projects/OpenGL_tutorial/Project_7/build/imgui/CMakeFiles/edit_cache.dir
+E:/GitHub/projects/OpenGL_tutorial/Project_7/build/imgui/CMakeFiles/rebuild_cache.dir
+E:/GitHub/projects/OpenGL_tutorial/Project_7/build/backend/CMakeFiles/backend.dir
+E:/GitHub/projects/OpenGL_tutorial/Project_7/build/backend/CMakeFiles/edit_cache.dir
+E:/GitHub/projects/OpenGL_tutorial/Project_7/build/backend/CMakeFiles/rebuild_cache.dir

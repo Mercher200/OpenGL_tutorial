@@ -40,6 +40,8 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("E:/GitHub/projects/OpenGL_tutorial/Project_7/build/src/cmake_install.cmake")
+  include("E:/GitHub/projects/OpenGL_tutorial/Project_7/build/imgui/cmake_install.cmake")
+  include("E:/GitHub/projects/OpenGL_tutorial/Project_7/build/backend/cmake_install.cmake")
 
 endif()
 

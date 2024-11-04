@@ -29,3 +29,4 @@ IMPORTED_LOCATION "${CMAKE_SOURCE_DIR}/GLFW/glfw3.lib"
 target_include_directories(src PUBLIC "./")
 target_link_libraries(src PUBLIC GLEW GLFW OpenGL::GL glm::glm)
 
+
