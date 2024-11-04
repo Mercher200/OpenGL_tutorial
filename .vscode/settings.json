@@ -104,6 +104,18 @@
     "xmemory": "cpp",
     "xstring": "cpp",
     "xtr1common": "cpp",
-    "xutility": "cpp"
+    "xutility": "cpp",
+    "algorithm": "cpp",
+    "cstdarg": "cpp",
+    "fstream": "cpp",
+    "functional": "cpp",
+    "iomanip": "cpp",
+    "list": "cpp",
+    "optional": "cpp",
+    "sstream": "cpp",
+    "string": "cpp",
+    "unordered_map": "cpp",
+    "vector": "cpp",
+    "xhash": "cpp"
   }
 }

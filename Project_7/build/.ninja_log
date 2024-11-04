@@ -1,9 +1,11 @@
 # ninja log v6
-4	4978	7523059836305948	src/CMakeFiles/src.dir/indexBuffer.cpp.obj	336aad0fdf723aa
-726	4987	7523059843531788	src/CMakeFiles/src.dir/Renderer.cpp.obj	d7b9622bc0ea4e6a
-1444	4988	7523059850707806	src/CMakeFiles/src.dir/VertexBuffer.cpp.obj	45b0726db5f39623
-2775	4988	7523059864013302	src/CMakeFiles/src.dir/Shader.cpp.obj	c352a2f9d753b5f7
-3476	4989	7523059871029839	src/CMakeFiles/src.dir/Texture.cpp.obj	7c89afdd9f2d7481
-2112	5031	7523059857395423	src/CMakeFiles/src.dir/VertexArray.cpp.obj	80b1a25045c12356
-4167	6879	7523059877936742	CMakeFiles/test.dir/main.cpp.obj	3a0a2d373fd5b1b2
-5031	7187	7523059886587822	src/src.lib	2f3259f64fa74acf
+4	6306	7523818355489429	src/CMakeFiles/src.dir/indexBuffer.cpp.obj	8244149ab7bab7b5
+752	6308	7523818362964431	src/CMakeFiles/src.dir/Renderer.cpp.obj	4cc233ba7480833e
+1509	6309	7523818370534785	src/CMakeFiles/src.dir/VertexBuffer.cpp.obj	d6f6cabba76de84a
+2305	6310	7523818378498158	src/CMakeFiles/src.dir/VertexArray.cpp.obj	37655d1d8fd8d601
+3051	6310	7523818385953229	src/CMakeFiles/src.dir/Shader.cpp.obj	2a4e39b5621891b2
+3880	6311	7523818394245496	src/CMakeFiles/src.dir/Texture.cpp.obj	62e8be8832a6f64f
+4744	6312	7523818402886604	src/CMakeFiles/src.dir/stb_image.cpp.obj	4571be477616815c
+5482	6847	7523818410261940	CMakeFiles/test.dir/main.cpp.obj	d84d967fc86f2242
+6312	7179	7523818418564185	src/src.lib	243003c92851e651
+7187	9219	7523818427314919	test.exe	2662738c08ecd7be
